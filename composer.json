@@ -1,0 +1,41 @@
+{
+    "name": "econosim/econosim-game",
+    "description": "An economy simulation game",
+    "keywords": ["game", "economy", "simulation"],
+    "homepage": "http://www.snapfrozen.com.au/",
+    "type": "project",
+    "license": "MIT",
+    "support": {},
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "cboden/ratchet": "0.3.*",
+        "conquer/oauth2": "*",
+        "conquer/gii-modal" : "*",
+        "fortawesome/font-awesome": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "econosim\\core\\": "vendor/econosim/econosim-core",
+            "econosim\\game\\": "vendor/econosim/econosim-game"
+        }
+    }
+}
